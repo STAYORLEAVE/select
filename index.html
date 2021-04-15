@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Select</title>
+  <link rel="stylesheet/less" href="index.less">
+  <script>
+    less = {
+      env: "development"
+    };
+  </script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/less.js/4.1.1/less.js"></script>
+  <script>less.watch();</script>
+</head>
+
+<body>
+  <div class="container">
+    <form action="" class="form">
+      <div class="form-item">
+        <div class="select">
+          <input type="text" class="select-value hidden" name="select1">
+          <input type="text" class="select-text">
+          <ul class="select-dropdown">
+            <li class="dropdown-item" data-value="item_1">item 1</li>
+            <li class="dropdown-item" data-value="item_2">item 2</li>
+            <li class="dropdown-item" data-value="item_3">item 3</li>
+            <li class="dropdown-item" data-value="item_4">item 4</li>
+            <li class="dropdown-item" data-value="item_5">item 5</li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-item">
+        <div class="select">
+          <input type="text" class="select-value hidden" name="select2">
+          <input type="text" class="select-text">
+          <ul class="select-dropdown">
+            <li class="dropdown-item" data-value="item_1">item 1</li>
+            <li class="dropdown-item" data-value="item_2">item 2</li>
+            <li class="dropdown-item" data-value="item_3">item 3</li>
+            <li class="dropdown-item" data-value="item_4">item 4</li>
+            <li class="dropdown-item" data-value="item_5">item 5</li>
+            <li class="dropdown-item" data-value="item_6">item 6</li>
+            <li class="dropdown-item" data-value="item_7">item 7</li>
+            <li class="dropdown-item" data-value="item_8">item 8</li>
+            <li class="dropdown-item" data-value="item_9">item 9</li>
+          </ul>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+<script src="index.js"></script>
+
+</html>

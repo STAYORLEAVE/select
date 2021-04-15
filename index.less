@@ -1,0 +1,88 @@
+// select style
+.select {
+  position: relative;
+
+  input {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+    border: 1px solid #999;
+    line-height: 1.5;
+
+    &:focus {
+      border-color: #3b82f6;
+      outline: none;
+    }
+  }
+
+  .select-dropdown {
+    list-style: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+      rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+
+    &:hover {
+      max-height: 200px;
+      overflow: auto;
+    }
+
+    .dropdown-item {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+      cursor: pointer;
+
+      &:hover,
+      &.active {
+        background-color: #d1d5db;
+      }
+
+      &:first-child {
+        margin-top: 20px;
+      }
+
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  input:focus ~ .select-dropdown {
+    max-height: 200px;
+    overflow: auto;
+  }
+}
+.hidden {
+  display: none;
+}
+
+// others style
+.container {
+  border: 1px solid #ececec;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+
+  .form {
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+  }
+
+  .form-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
