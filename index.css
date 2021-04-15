@@ -1,0 +1,76 @@
+/* select style */
+.select {
+  position: relative;
+}
+.select input {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+  border: 1px solid #999;
+  line-height: 1.5;
+}
+.select input:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+.select .select-dropdown {
+  list-style: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+.select .select-dropdown:hover {
+  max-height: 200px;
+  overflow: auto;
+}
+.select .select-dropdown .dropdown-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.select .select-dropdown .dropdown-item:hover,
+.select .select-dropdown .dropdown-item.active {
+  background-color: #d1d5db;
+}
+.select .select-dropdown .dropdown-item:first-child {
+  margin-top: 20px;
+}
+.select .select-dropdown .dropdown-item:last-child {
+  margin-bottom: 20px;
+}
+.select input:focus ~ .select-dropdown {
+  max-height: 200px;
+  overflow: auto;
+}
+.hidden {
+  display: none;
+}
+
+/* other style */
+.container {
+  border: 1px solid #ececec;
+  padding: 20px;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.container .form {
+  margin-left: -10px;
+  margin-right: -10px;
+  display: flex;
+}
+.container .form-item {
+  padding-left: 10px;
+  padding-right: 10px;
+}
